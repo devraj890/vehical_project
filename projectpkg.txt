@@ -1,0 +1,5 @@
+pip intall django,
+pip intall jazzmin,
+pip intall django-jquery,
+makemigration(when creating data base in my php admin)
+makemigrate

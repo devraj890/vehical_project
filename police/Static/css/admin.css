@@ -1,0 +1,19 @@
+/* Change the background color of the header */
+#header {
+    background-color: #0c0b0b;
+}
+
+/* Change the font color of the site name */
+#site-name a {
+    color: #ffffff;
+}
+
+/* Change the background color of the sidebar */
+#content-related {
+    background-color: #e3e3e3;
+}
+
+/* Change the font color of the sidebar links */
+#content-related a {
+    color: #000000;
+}

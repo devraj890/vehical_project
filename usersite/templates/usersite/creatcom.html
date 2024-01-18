@@ -1,0 +1,56 @@
+{% extends 'basic.html'%}
+{% block conactive%}active{%endblock conactive%}
+{%block body%}
+<br>
+<br>
+<h1 class="mt-5"> Give Complain details</h1>
+<div class="container mt-2">
+
+    <form method="POST" action="/creatcom/">
+        {% csrf_token %}
+    <label for="complain_name">Complain Name:</label>
+    <input type="text" id="complain_name" name="complain_name" required>
+    <br>
+    <label for="contact">Contact:</label>
+    <input type="text" id="contact" name="contact" required>
+    <br>
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" required></textarea>
+    <br>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+    <br>
+    <label for="vehicle_make">Vehicle Make:</label>
+    <input type="text" id="vehicle_make" name="vehicle_make" required>
+    <br>
+    <label for="vehicle_model">Vehicle Model:</label>
+    <input type="text" id="vehicle_model" name="vehicle_model" required>
+    <br>
+    <label for="vehicle_year">Vehicle Year:</label>
+    <input type="text" id="vehicle_year" name="vehicle_year" required>
+    <br>
+    <label for="licence_plate">Licence Plate:</label>
+    <input type="text" id="licence_plate" name="licence_plate" required>
+    <br>
+    <label for="date_of_theft">Date of Theft:</label>
+    <input type="date" id="date_of_theft" name="date_of_theft" required>
+    <br>
+    <label for="time_of_theft">Time of Theft:</label>
+    <input type="time" id="time_of_theft" name="time_of_theft" required>
+    <br>
+    <label for="location_last_seen">Location Last Seen:</label>
+    <textarea id="location_last_seen" name="location_last_seen" required></textarea>
+    <br>
+    <label for="rc_no">RC No:</label>
+    <input type="text" id="rc_no" name="rc_no" required>
+    <br>
+    <label for="old_vehicle_shell">Old Vehicle Shell:</label>
+    <input type="text" id="old_vehicle_shell" name="old_vehicle_shell" required>
+    <br>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+    <br>
+    <input class="btn btn-primary" type="submit" value="Submit">
+</form>
+</div>
+{%endblock%}

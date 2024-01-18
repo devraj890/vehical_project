@@ -1,0 +1,59 @@
+{% extends 'basicp.html'%}
+{%block body%}
+
+    <h1>Your Complains</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Is Found?</th>
+                <th><label for="is_found">Complaint Found:</label></th>
+                <th>City</th>
+                <th>Created At</th>
+                <th>Vehicle Make</th>
+                <th>Vehicle Model</th>
+                <th>Vehicle Year</th>
+                <th>Licence Plate</th>
+                <th>Description</th>
+                <th>Complain Name</th>
+                <th>Contact</th>
+                <th>Address</th>
+                <th>Date of Theft</th>
+                <th>Time of Theft</th>
+                <th>Location Last Seen</th>
+                <th>RC No.</th>
+                <th>Old Vehicle Shell</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for complain in complains %}
+            <tr>
+                <td>{% if complain.is_found %}Yes{% else %}No{% endif %}</td>
+                <td><form method="post" action="{% url 'found' %}">{%csrf_token%}
+                <input type="hidden" name="complain_id" value="{{complain.complain_id}}">
+                <br>
+                <input type="submit" value="Submit">
+                </form></td>
+                <td>{{ complain.city }}</td>
+                <td>{{ complain.created_at }}</td>
+                <td>{{ complain.vehicle_make }}</td>
+                <td>{{ complain.vehicle_model }}</td>
+                <td>{{ complain.vehicle_year }}</td>
+                <td>{{ complain.licence_plate }}</td>
+                <td>{{ complain.description }}</td>
+                <td>{{ complain.complain_name }}</td>
+                <td>{{ complain.contact }}</td>
+                <td>{{ complain.address }}</td>
+                <td>{{ complain.date_of_theft }}</td>
+                <td>{{ complain.time_of_theft }}</td>
+                <td>{{ complain.location_last_seen }}</td>
+                <td>{{ complain.rc_no }}</td>
+                <td>{{ complain.old_vehicle_shell }}</td>
+               
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+{%endblock%}

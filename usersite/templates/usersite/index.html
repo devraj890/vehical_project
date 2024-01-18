@@ -1,0 +1,147 @@
+{% extends 'basic.html'%}
+{% block conactive%}active{%endblock conactive%}
+{%block body%}
+{% load static %}
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Online vehical complaint</h1>
+          <h2> Welcome to our online vehicle theft police complaint website</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img id="car_img" src="{% static 'assets/img/picf.jpg'%}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+  <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Welcome to our online vehicle theft police complaint website. Our mission is to provide a convenient and efficient platform for users to report vehicle theft incidents to the police and  in recovering their stolen vehicles. We are committed to serving the community by leveraging the power of technology to combat vehicle theft and ensure the safety of our citizens.
+            </p>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Our mission is to provide a seamless and efficient process for users to report vehicle theft incidents and collaborate with law enforcement agencies in recovering stolen vehicles. We are dedicated to providing a secure and user-friendly platform that empowers victims of vehicle theft and helps them seek justice.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Our online vehicle theft police complaint website offers a range of services to help victims of vehicle theft report incidents and collaborate with law enforcement agencies in recovering their stolen vehicles. Our services include:</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href=""> Online reporting of vehicle theft </a></h4>
+              <p> Our website provides a simple and convenient process for users to report vehicle theft incidents online.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">check resport status</a></h4>
+              <p>for partiality of the process we providing, when vehical is recovering or Reserveing </p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">also you can see your profile</a></h4>
+              <p>you can check your profile status & and make profile from registration</p>
+            </div>
+          </div>
+  </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>top rank Officer</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/police1.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4></h4>
+                <span></span>
+                <p></p>
+                 </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/police2.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member d-flex align-items-start">
+              <div class="pic"><img src="{% static 'assets/img/police3.jpg'%}" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+               
+              </div>
+            </div>
+          </div>
+
+      
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+    <!-- ======= Contact Section ======= -->
+ 
+
+  </main><!-- End #main -->
+
+{%endblock%}

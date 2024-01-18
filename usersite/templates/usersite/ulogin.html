@@ -1,0 +1,33 @@
+{% extends 'basic.html' %}
+{% block css %}
+
+</style>
+{% endblock %}
+{%block body%}
+<div class="login-form">
+  <form method="post" {% url 'ulogin' %}>
+    {% csrf_token %}
+    <h2>Login</h2>
+    {% if error %}
+    <p class="text-danger">{{ error }}</p>
+    {% endif %}
+    <div class="form-group">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="lusername" required>
+    </div>
+    <div class="form-group">
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="lpassword" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Add any extra JavaScript here
+</script>
+{% endblock %}
+
